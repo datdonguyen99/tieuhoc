@@ -1,0 +1,15 @@
+.label-New {
+	background-color: #329ACF;
+	color: #fff;
+}
+
+.label-Pending{
+	background-color: #0102D0; color: #fff;
+}
+
+.label-Complete{
+	background-color: #019e07; color: #fff;
+}
+.label-Shipped{
+	background-color: #E78442; color: #fff;
+}

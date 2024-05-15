@@ -1,0 +1,72 @@
+#flexiselDemo3 {
+	display: none;
+}
+
+.nbs-flexisel-container {
+	position: relative;
+	max-width: 100%;
+}
+.nbs-flexisel-ul {
+	position: relative;
+	width: 9999px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.nbs-flexisel-inner {
+	background-color: #F0AD4E;
+	overflow: hidden;
+	height: 85px;
+	float: left;
+	width: 100%;
+	border: 7px solid #F0AD4E;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.nbs-flexisel-item {
+	float: left;
+	margin-left: 9px;
+	margin-right: 20px;
+	padding: 0px;
+	cursor: pointer;
+	position: relative;
+	line-height: 5px;
+	max-width: 85px;
+	height: 70px;
+	width: 100% !important;
+}
+.nbs-flexisel-item img {
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-radius:10px;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	cursor: pointer;
+	z-index: 100;
+	opacity: 0.5;
+}
+
+.nbs-flexisel-nav-left {
+	top: 104px;
+    left: 259px;
+	-background: url(../images/arrow_al.png) no-repeat;
+}
+
+.nbs-flexisel-nav-right {
+	top: 104px;
+	right: 5px;
+	-background: url(../images/arrow_al1.png) no-repeat;
+}

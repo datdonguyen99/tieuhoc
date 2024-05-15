@@ -1,0 +1,406 @@
+.mobile-menu-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+}
+
+.mobile-menu-wrap {
+    width: 280px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    visibility: hidden;
+    transform: translateX(100%);
+
+}
+
+.mobile-menu-wrap.animate {
+    transition: all 0.35s ease;
+}
+
+
+.mobile-menu-wrap .logo {
+    border-bottom: 1px #ddd solid;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.mobile-menu-wrap .logo img {
+    height: 50px;
+    width: auto;
+}
+
+.mobile-menu-wrap .menu {
+    background-color: #56861d;
+    height: calc(100vh - 101px);
+    overflow: auto;
+}
+
+.mobile-menu-toggle-btn {
+    cursor: pointer;
+    background: #376303;
+    width: 32px;
+    top: 100%;
+    right: 10px;
+    text-align: center;
+    line-height: 26px;
+    /* font-size: 22px; */
+    border-radius: 3px;
+    display: none;
+}
+
+.mobile-menu-toggle-btn:hover {
+    background-color: #2b430e
+}
+
+.mobile-menu-toggle-btn i {
+    color: #fff;
+}
+
+.nv-list-item li em {
+    float: left
+}
+
+.margin-right .twitter-share-button.twitter-share-button-rendered.twitter-tweet-button{
+    margin-top: 8px;
+}
+
+.social-extend{
+    display: flex;
+    margin-left: 15px;
+}
+
+.social-extend .fb_iframe_widget{
+    top: -8px;
+}
+
+@media(max-width:999px) {
+    .mobile-menu-toggle-btn {
+        transition: width 0.5s;
+        display: block;
+        float: right;
+        margin: 4px 0;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .body-bg #body .menu-collapser{
+        display : block!important;
+        background: #56861D !important;
+        height: 35px !important;
+    }
+    
+    .body-bg #body .slimmenu{
+        display : none!important;
+    }
+
+    .open-menu .mobile-menu-wrap .menu .slimmenu{
+        display : none!important;
+    }
+    
+     .open-menu .mobile-menu-wrap .menu .metismenu{
+        background: transparent!important;
+    }
+
+    .mobile-menu-toggle-btn i:hover,
+    .mobile-menu-toggle-btn i:focus {
+        background: #2b430e !important;
+    }
+
+    .metismenu .sidebar-nav ul li {
+        padding: 5px 0;
+    }
+
+    .headerSearch.col-sm-5.col-md-6 {
+        display: none;
+    }
+
+    .headerSearch input {
+        border: #fff 1px solid;
+    }
+
+    .collapse-button {
+        display: none;
+    }
+
+    .slimmenu {
+        display: none;
+    }
+
+    .open-menu .mobile-menu-bg {
+        display: block;
+    }
+
+    .open-menu .mobile-menu-wrap {
+        visibility: visible;
+        transform: translateX(0px);
+    }
+
+    .sf-with-ul {
+        background: #f3f3f4 !important;
+    }
+
+    .metismenu .arrow {
+        color: #0742b8 !important;
+        margin-top: -23px !important;
+    }
+
+    .mobile-menu-wrap .menu {
+        height: calc(100vh - 60px);
+        overflow: auto;
+    }
+}
+
+.fb_iframe_widget iframe {
+    position: absolute;
+    border: none;
+    visibility: visible;
+    width: 145px;
+    height: 22px;
+    margin-top: 8px;
+    margin-left: -10px;
+}
+
+.treeviewedu08Action .treeview {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 7px;
+}
+
+.treeviewedu08Action .treeview li {
+    width: 77px;
+    padding: 3px 5px 3px 5px !important;
+}
+
+#htqt .hethongquangtri .style_nav{
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+
+#htqt .hethongquangtri #sample-menu-4{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: auto;
+}
+
+#htqt .hethongquangtri #sample-menu-4 li{
+    width: auto;
+    margin: 0px 10px 5px 0px;
+}
+
+#htqt .hethongquangtri #sample-menu-4 li a{
+    padding-right: 10px;
+}
+
+@media(max-width: 736px) {
+
+    .input-group-btn:last-child>.btn,
+    .input-group-btn:last-child>.btn-group {
+        z-index: 2;
+        margin-left: -1px;
+        margin-top: 0px !important;
+        height: 21px;
+    }
+}
+
+@media(max-width: 720px) {
+
+    .input-group-btn:last-child>.btn,
+    .input-group-btn:last-child>.btn-group {
+        z-index: 2;
+        margin-left: -1px;
+        margin-top: 0px !important;
+        height: 21px;
+    }
+}
+
+@media only screen and (min-width: 512px) and (max-width: 540px) {
+    .input-group-btn:last-child>.btn,
+    .input-group-btn:last-child>.btn-group {
+        z-index: 2;
+        margin-left: -1px;
+        margin-top: 0px !important;
+        height: 21px;
+    }
+    .nbs-flexisel-item{
+        margin: 0 20px 0 9px !important;
+    }
+    .mobile-menu-wrap .menu {
+        height: calc(110vh - 60px);
+    }
+}
+
+@media(max-height: 500px) {
+    .nbs-flexisel-item{
+        margin: 0 20px 0 9px !important;
+    }
+}
+
+@media(max-width: 280px) {
+    .mobile-menu-wrap .menu {
+        height: calc(100vh - 60px);
+        overflow: auto;
+    }
+}
+
+@media(max-width: 350px) {
+    #htqt .hethongquangtri #sample-menu-4 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: normal;
+        width: 100%;
+    }
+}
+
+@media(max-width: 361px) {
+    .treeviewedu08Action ul.treeview {
+        padding: 20px 6px 0 6px!important;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-around;
+        
+    }
+    .treeviewedu08Action .treeview li {
+        width: 64px;
+    }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 767px) {
+    #htqt .hethongquangtri #sample-menu-4 li a {
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 424px) {
+    .treeviewedu08Action ul.treeview {
+        padding: 20px 6px 0 6px!important;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        
+    }
+
+    .treeviewedu08Action .treeview li {
+        width: 83px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 970px){
+    .treeviewedu08Action .treeview li {
+        width: 68px;
+        padding :0 0 0 0 !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 875px){
+    .treeviewedu08Action .treeview li {
+        width: 59px;
+        padding :0 0 0 0 !important;
+    }
+    
+    .treeviewedu08Action .treeview li a {
+        font-size: 9px;
+    }
+    
+    .treeviewedu08Action .treeview li a img {
+        width: 100%;
+        padding: 0px 2px 0 2px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+    .treeviewedu08Action ul.treeview {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 0px;
+        justify-content: center;
+        padding-left : 0px!important;
+    }
+
+    .treeviewedu08Action .treeview li {
+        width: 83px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .treeviewedu08Action ul.treeview{
+       padding-left: 7px !important;
+    }
+    
+    #htqt .hethongquangtri #sample-menu-4{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: normal;
+        width: 100%;
+    }
+}
+
+.lienkethuuich .marqueelk ul.nbs-flexisel-ul{
+        left : 0px!important;
+    }
+    
+.lienkethuuich .marqueelk div{
+    width : 820px!important;
+}
+
+@media (min-width: 768px) {
+    .bgabout .responsive-slider .slides ul li .slide-body img {
+        object-position: center;
+        object-fit: cover;
+        min-height : 202px;
+        width: 100%;
+
+    }
+    .bgabout .menuabout .metismenu .sidebar ul li{
+        padding : 10px 0;
+    }
+}
+
+.headerSearch .input-group {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    z-index : 4;
+    background: #fff;
+}
+
+.headerSearch input {
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.headerSearch .btn-info {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#body .row .col-sm-8 .table {
+    border: 0px solid #56861D;
+}
+
+#body .group_news a.show:hover{
+    color: #56861c;
+}
+
+.custom-menu {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.col-sm-8.col-md-6 #htqt .hethongquangtri #sample-menu-4{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: normal;
+    width: 100%;
+}
