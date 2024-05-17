@@ -18,20 +18,17 @@ class Home extends Frontend_Controller
 		$this->load->model('Post_model');
 		$this->load->model('Banner_model');
 		$this->load->model('Category_model');
+		$this->load->model('SchoolInfoModel');
 
-		$this->temp['keywords'] = "";
-		$this->temp['description'] = "";
-
-		if (isset($this->cf[10]))
-			$this->temp['title']  = $this->cf[10]->value;
-		else
-			$this->temp['title'] = "Trang chủ";
+		$this->temp['title'] = isset($this->cf[10]) ? $this->cf[10]->value : "Trang chủ";
 	}
 
 	function index()
 	{
 		$this->temp['template'] = 'frontend/home_view';
 		$this->temp['config']['home'] = 1;
+		$this->temp['data']['side_bars'] = SchoolInfoModel::SelectAll();
+		$this->temp['data']['side_bar_sliders'] = Banner_model::SelectByType('side-bar-slider', 8);
 
 		$this->render();
 	}

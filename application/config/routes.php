@@ -54,7 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['contact'] = 'frontend/Contact';
-$route['([a-zA-Z0-9_-]+)-bv-(:num).html'] = 'frontend/Blog/detail/$1/$2';
+
 /*Blog*/
 // $route['lien-he'] = 'frontend/Contact';
 // $route['lien-he-nhanh'] = 'frontend/Contact/quickContact';
@@ -79,6 +79,10 @@ $route['thoat'] = 'frontend/Login/logout';
 $route['terms'] = 'Home/terms';
 $route['sitemap2.xml'] = 'Sitemap';
 
-// $route['([a-zA-Z0-9_-]+)-id-(:num).html'] = "frontend/Category/index/$1/$2"; //category link
-// $route['([a-zA-Z0-9_-]+)-bv-(:num).html'] = "frontend/Blog/detail/$1/$2";
+$route['thong-bao'] = 'frontend/Notification';
+$route['posts/download/(:num)'] = 'frontend/Blog/download/$1';
+$route['posts/print/(:num)'] = 'frontend/Blog/print/$1';
+
+$route['([a-zA-Z0-9_-]+)-id-(:num).html'] = "frontend/Category/index/$1/$2"; //category link
+$route['([a-zA-Z0-9_-]+)-bv-(:num).html'] = 'frontend/Blog/detail/$1/$2';
 // $route['([a-zA-Z0-9_-]+)-sp-(:num).html'] = "frontend/Detail/product/$1/$2";

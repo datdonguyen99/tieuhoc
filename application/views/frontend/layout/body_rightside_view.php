@@ -1,70 +1,43 @@
+<?php
+// print_r($data['side_bars']);
+// print_r($data['side_bar_sliders'][0]);
+?>
+
 <div class="treeviewedu08Action clearfix">
-    <ul id="navigation67">
-        <li class="current">
-            <a title="Thông báo" href="/"><img src="/uploads/edu08/menu/iconthongbao.jpg" /><br />
-                Thông báo
-            </a>
-        </li>
-        <li class="current">
-            <a title="Tuyển sinh" href="/"><img src="/uploads/edu08/menu/icontuyensinh.jpg" /><br />
-                Tuyển sinh
-            </a>
-        </li>
-        <li class="current">
-            <a title="Tiêu biểu" href="/"><img src="/uploads/edu08/menu/iconvanban.jpg" /><br />
-                Tiêu biểu
-            </a>
-        </li>
-        <li>
-            <a title="Tài nguyên" href="/download/"><img src="/uploads/edu08/menu/icontainguyen.jpg" /><br />
-                Tài nguyên
-            </a>
-        </li>
-        <li class="current">
-            <a title="Thông tin công khai" href="/"><img src="/uploads/edu08/menu/iconcongkhai.jpg" /><br />
-                Thông tin công khai
-            </a>
-        </li>
-        <li class="current">
-            <a title="Nội Quy Nhà Trường" href="/"><img src="/uploads/edu08/menu/iconbantin.jpg" /><br />
-                Nội Quy Nhà Trường
-            </a>
-        </li>
-        <li class="current">
-            <a title="Bán trú" href="/"><img src="/uploads/edu08/menu/iconbantru.jpg" /><br />
-                Bán trú
-            </a>
-        </li>
-        <li class="current">
-            <a title="Học hành" href="/"><img src="/uploads/edu08/menu/icontuyensinh.jpg" /><br />
-                Học hành
-            </a>
-        </li>
+    <ul id="navigation67" class="treeview">
+        <?php
+        if (isset($data['side_bars']) && count($data['side_bars']) > 0) {
+            foreach ($data['side_bars'] as $s) {
+        ?>
+                <li class="current">
+                    <a title="<?php echo $s->name; ?>" href="/"><img src="<?php echo $s->thumb; ?>" /><br />
+                        <?php echo mb_strtoupper($s->name, 'UTF-8'); ?>
+                    </a>
+                </li>
+        <?php
+            }
+        }
+        ?>
     </ul>
 </div>
 <div class="clear"></div>
 <div class="lienkethuuich">
-    <img class="title_lkhi" src="/themes/edu08/images/lienkehuuich.png">
-    <ul id="flexiselDemo3">
-        <li>
-            <a href=""><img src="/uploads/edu08/bgd.jpg" height="100%" alt="" title="" /></a>
-        </li>
-        <li>
-            <a href=""><img src="/uploads/edu08/nkv_1.png" height="100%" alt="" title="" /></a>
-        </li>
-        <li>
-            <a href=""><img src="/uploads/edu08/edu_3.jpg" height="100%" alt="" title="" /></a>
-        </li>
-        <li>
-            <a href=""><img src="/uploads/edu08/anh3.jpg" height="100%" alt="" title="" /></a>
-        </li>
-        <li>
-            <a href=""><img src="/uploads/edu08/anh2.jpg" height="100%" alt="" title="" /></a>
-        </li>
-        <li>
-            <a href=""><img src="/uploads/edu08/anh1.jpg" height="100%" alt="" title="" /></a>
-        </li>
-    </ul>
+    <?php
+    if (isset($data['side_bar_sliders']) && count($data['side_bar_sliders']) > 0) {
+        $firstSideBar = $data['side_bar_sliders'][0];
+    ?>
+        <img class="title_lkhi" src="<?php echo $firstSideBar->thumb; ?>">
+        <ul id="flexiselDemo3">
+            <?php
+            for ($i = 1; $i < count($data['side_bar_sliders']); ++$i) {
+            ?>
+                <li>
+                    <a href=""><img src="<?php echo $data['side_bar_sliders'][$i]->thumb; ?>" height="100%" alt="" title="" /></a>
+                </li>
+        <?php
+            }
+        }
+        ?>
 </div>
 <div class="clear"></div>
 <div id="htqt">

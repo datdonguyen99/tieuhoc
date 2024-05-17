@@ -13,7 +13,7 @@
     if (isset($menu) && !empty($menu)) {
         foreach ($menu as $m) {
             $subs = Category_model::SelectByParentId($m->id);
-            $link = Category_model::GetLink($m);
+            $link = $m->slug == 'trang-nhat' ? '/' : Category_model::GetLink($m);
             if (!empty($subs)) {
                 echo "<li class='nav-item dropdown'><a class='nav-link dropdown-toggle' id='navbarDropdown_$m->id' role='button' data-bs-toggle='dropdown' aria-expanded='false' title='$m->name' href='#'>$m->name</a>";
                 echo "<ul aria-labelledby='navbarDropdown_$m->id'>";

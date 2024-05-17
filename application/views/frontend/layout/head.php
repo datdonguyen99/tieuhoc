@@ -12,7 +12,7 @@
 <link rel="preload" as="style" href="/themes/edu08/css/style.css?t=1713859185" type="text/css">
 <link rel="preload" as="style" href="/themes/edu08/css/style.responsive.css?t=1713859185" type="text/css">
 <link rel="preload" as="style" href="/themes/edu08/css/news.css?t=1713859185" type="text/css">
-<link rel="preload" as="style" href="/themes/edu08/css/custom.css?t=1713859185" type="text/css">
+<link rel="preload" as="style" href="/themes/edu08/css/custom.css?t=1715747428" type="text/css">
 <link rel="preload" as="style" href="/themes/edu08/css/jquery.metisMenu.css?t=1713859185" type="text/css">
 <link rel="preload" as="style" href="/themes/edu08/css/responsive-slider.css?t=1713859185" type="text/css">
 <link rel="preload" as="style" href="/themes/edu08/css/style2.css?t=1713859185" type="text/css">
@@ -23,7 +23,7 @@
 <link rel="preload" as="style" href="/themes/edu08/css/superfish-navbar.css?t=1713859185" type="text/css">
 <link rel="preload" as="style" href="/themes/edu08/css/superfish-vertical.css?t=1713859185" type="text/css">
 <link rel="preload" as="style" href="/themes/default/css/contact.css?t=1713859185" type="text/css">
-<link rel="preload" as="script" href="/assets/js/jquery/jquery.min.js?t=1713859185" type="text/javascript">
+<!-- <link rel="preload" as="script" href="/assets/js/jquery/jquery.min.js?t=1713859185" type="text/javascript">
 <link rel="preload" as="script" href="/assets/js/language/vi.js?t=1713859185" type="text/javascript">
 <link rel="preload" as="script" href="/assets/js/DOMPurify/purify3.js?t=1713859185" type="text/javascript">
 <link rel="preload" as="script" href="/assets/js/global.js?t=1713859185" type="text/javascript">
@@ -42,13 +42,13 @@
 <link rel="preload" as="script" href="/assets/js/superfish/superfish.js?t=1713859185" type="text/javascript">
 <link rel="preload" as="script" href="/assets/js/superfish/supersubs.js?t=1713859185" type="text/javascript">
 <link rel="preload" as="script" href="/themes/default/js/contact.js?t=1713859185" type="text/javascript">
-<link rel="preload" as="script" href="/themes/edu08/js/bootstrap.min.js?t=1713859185" type="text/javascript">
+<link rel="preload" as="script" href="/themes/edu08/js/bootstrap.min.js?t=1713859185" type="text/javascript"> -->
 <link rel="StyleSheet" href="/assets/css/font-awesome.min.css?t=1713859185">
 <link rel="StyleSheet" href="/themes/edu08/css/bootstrap.min.css?t=1713859185">
 <link rel="StyleSheet" href="/themes/edu08/css/style.css?t=1713859185">
 <link rel="StyleSheet" href="/themes/edu08/css/style.responsive.css?t=1713859185">
 <link rel="StyleSheet" href="/themes/edu08/css/news.css?t=1713859185">
-<link rel="StyleSheet" href="/themes/edu08/css/custom.css?t=1713859185">
+<link rel="StyleSheet" href="/themes/edu08/css/custom.css?t=1715747428">
 <link rel="stylesheet" type="text/css" href="/themes/edu08/css/jquery.metisMenu.css?t=1713859185" />
 <link href="/themes/edu08/css/responsive-slider.css?t=1713859185" rel="stylesheet" />
 <link href="/themes/edu08/css/style2.css?t=1713859185" rel="stylesheet">
@@ -75,7 +75,7 @@
 
     .style_nav {
         position: relative;
-        -background: url("/themes/edu08/images/menu/nen.png") repeat-x;
+        background: url("/themes/edu08/images/menu/nen.png") repeat-x;
         height: 60px;
         line-height: 32px;
         z-index: 990

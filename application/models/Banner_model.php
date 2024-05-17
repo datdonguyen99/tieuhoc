@@ -5,7 +5,7 @@ class Banner_model extends MY_Model
 {
     protected static $_tbl = 'banners';
     public static $_field = array('name', 'thumb', 'link', 'sort_order', 'description', 'background', 'type');
-    public static $_type = array('head' => 'Banner head top (Ngang trên)', 'home-slider' => 'Slider Home (Trang chủ)');
+    public static $_type = array('head' => 'Banner head top (Ngang trên)', 'home-slider' => 'Slider Home (Trang chủ)', 'side-bar-slider' => 'Side Bar Slider');
 
     public function __construct()
     {

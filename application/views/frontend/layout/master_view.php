@@ -46,9 +46,9 @@
 								}
 							}
 						} else { ?>
-							<div class="col-md-18">
+							<div class="col-sm-16 col-md-18">
 								<?php
-								print_r("OK");
+								// print_r("OK");
 								if (isset($template)) {
 									if ($template != "") {
 										$this->load->view($template);
@@ -56,8 +56,8 @@
 								}
 								?>
 							</div>
-							<div class='col-md-6'>
-								<?php $this->load->view('frontend/layout/body_rightside_view'); ?>
+							<div class='col-sm-8 col-md-6'>
+								<?php $this->load->view('frontend/layout/body_rightside_detail_view'); ?>
 							</div>
 						<?php } ?>
 					</div>

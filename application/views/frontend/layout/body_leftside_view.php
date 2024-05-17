@@ -6,11 +6,10 @@
         <ul style="padding: 0px">
             <?php
             $listNotification = Post_model::SelectByType(0);
-            // print_r($thongbao);
             if (isset($listNotification) && count($listNotification) > 0) {
                 foreach ($listNotification as $n) {
                     $link = Post_model::GetLink($n);
-                    print_r($link);
+                    // print_r($link);
             ?>
                     <li class="clearfix">
                         <a class="show" href="<?php echo $link; ?>">
@@ -23,5 +22,7 @@
             ?>
         </ul>
     </div>
-    <div class="text-right"><strong><a href="/thong-bao/">Tất cả >> </a> </strong></div>
+    <div class="text-right">
+        <strong><a href="/thong-bao/">Tất cả >> </a></strong>
+    </div>
 </div>

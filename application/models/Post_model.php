@@ -48,6 +48,15 @@ class Post_model extends MY_Model
         return self::query_cache($name, "SELECT p.* FROM posts p WHERE p.type = '$type' AND is_deleted = 0 $limit", FALSE);
     }
 
+    public static function SelectOldNews($type, $limit = 5)
+    {
+        $page = 1;
+        $limit = self::limit_str($page, $limit);
+        $name   = 'SelectOldNews' . $type;
+
+        return self::query_cache($name, "SELECT p.* FROM posts p WHERE p.type = '$type' AND is_deleted = 0 ORDER BY p.created_date ASC $limit", FALSE);
+    }
+
     public static function SelectByCategoryId($cate_id, $page = 1, $limit = 30, &$total = 0, $show_all = 0)
     {
         $cate_id   = (int) $cate_id;
